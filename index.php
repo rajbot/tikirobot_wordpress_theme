@@ -48,7 +48,7 @@ Filed under: <?php the_category(', ') ?> |
     
 	</div>
 
-    
+<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(2) ) : ?>
 	<?php if (function_exists('get_recent_comments')) { ?>
    <h2><?php _e('Commenting'); ?></h2>
         <ul class="recent-comments">
@@ -57,7 +57,8 @@ Filed under: <?php the_category(', ') ?> |
         </ul>
   
    <?php } ?>   
- 
+<?php endif; ?>
+
 </div>
 </div><!-- container ends  -->
 <?php get_sidebar(); ?>

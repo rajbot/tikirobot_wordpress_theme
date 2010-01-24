@@ -1,6 +1,6 @@
 <?php
 if ( function_exists('register_sidebar') )
-   register_sidebar(array(
+   register_sidebars(2, array(
         'before_widget' => '',
         'after_widget' => '',
         'before_title' => '<h2 class="title">',

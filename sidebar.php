@@ -46,7 +46,7 @@ echo '
 }
 ?>
 
-<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
+<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(1) ) : ?>
 
 <!-- Google CSE Search Box Begins -->
 <h2>Search TikiRobot!</h2>
