@@ -11,6 +11,9 @@
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<title><?php bloginfo('name'); ?>, Mai Tais and Blinky Lights, Ahoy! <?php wp_title(); ?></title>
 	<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" /> <!-- leave this for stats please -->
+	<style type="text/css" media="handheld">
+		@import url( <?php echo get_bloginfo('stylesheet_directory').'/mobile.css'; ?> );
+	</style>
 	<style type="text/css" media="screen">
 		@import url( <?php bloginfo('stylesheet_url'); ?> );
 	</style>
