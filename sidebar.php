@@ -1,23 +1,7 @@
 <!-- begin sidebar -->
 <div id="navcol" >
-<!--
-<style>
-ul.events {font-size:.95em;}
-ul.events li span {font-weight:bold; display:block;}
-ul.events li {padding-bottom:8px; border-top:1px dotted #ccc;}
-</style>
-<h2>Upcoming Events</h2>
-<ul class="events">
-<li><span>Sat Sep 15</span> Treasure Island Music Festival; Thievery Corporation, DJ Shadow & Cut Chemist, etc.  Sunday Modest Mouse etc. </li> 
-<li><span>Thu Sep 20</span> Symbiosis Gathering</li> 
-<li><span>Fri Sep 28</span> DJ Mita (also PVD) @ 1015 </li> 
-<li><span>Fri Sep 28</span>  Girls of Techno :: Forest Green headlines :: Anu-Bar</li>  
-<li><span>Sat Sep 29</span>  Love Parade SF ; also after party</li>
-<li><span>Sat 29Sep  Infected Mushroom @ 1015 </li>
-</ul>
--->
 
-<!-- Start of Upcoming Badge -->
+<!-- Start of Upcoming Badge, modified to TikiRobot -->
 <style type="text/css">
 div#upcoming_clean_medium {width:150px;margin:0;padding:0px 8px 8px 0; border-bottom:1px dotted #ccc;}
 div#upcoming_clean_medium .upb_text,div#upcoming_clean_medium a {color:#333;font:normal 11px Verdana, Arial, Helvetica, sans-serif}
@@ -37,8 +21,6 @@ div#upcoming_clean_medium .upb_more {margin: 10px 0px 5px 0px;text-align:left}
 <div class="upcoming_badge" id="upcoming_clean_medium">
   <h2 style="margin-bottom:0px;">Upcoming Events</h2>
   <div class="upb_events"><script type="text/javascript" src="http://hyperreal.org/~rkumar/rajlist/upcoming.cgi"></script></div>
-<!--  <div class="upb_events"><script type="text/javascript" src="http://badge.upcoming.yahoo.com/v1/?badge_type=user&badge_size=sm&badge_layout=v&badge_styling=2&badge_no_background=&badge_venue=0&date_format_type=us_med&id=149036"></script></div>
-  <div class="upb_more"><span class="upb_text"><a href="http://upcoming.yahoo.com/user/149036/">More of <u>TikiRobot's events</u></a></span></div> -->
 </div>
 <!-- End of Upcoming Badge - get your own at http://upcoming.yahoo.com/badge/ -->
 
@@ -66,14 +48,6 @@ echo '
 
 
 
-<!--
-		<h2>Subscribe</h2>
-		<form method="post" action="maillist/index.php">
-         Enter your e-mail address to receive notifications when there are new posts<br /><br />
-		        <input type="text" name="email" size="12" maxlength="36" />
-				 <input type="submit" name="submit" value="sign up" />
-		</form>
--->
 <!-- 
 		<h2>Links</h2>
 		<ul>
