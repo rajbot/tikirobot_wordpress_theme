@@ -46,6 +46,7 @@ echo '
 }
 ?>
 
+<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar() ) : ?>
 
 <!-- Google CSE Search Box Begins -->
 <h2>Search TikiRobot!</h2>
@@ -103,6 +104,7 @@ echo '
 
 
 </div>
+<?php endif; ?>
 <!-- end sidebar -->
 <div class="clear"></div>
 
