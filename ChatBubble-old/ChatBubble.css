@@ -1,0 +1,111 @@
+/* 
+  -- Even more rounded corners with CSS: Base stylesheet --
+
+I downloaded this from here:
+http://www.schillmania.com/content/projects/even-more-rounded-corners/
+
+And then changed the background image to be an iChat-style bubble.
+*/
+
+div.CBmsg {
+                  display: table; 
+                    float: right;
+            margin-bottom: 0.5em;          
+          }
+
+div.CBavatarRight { 
+                  display: table-cell; 
+                  padding-left: 10px;
+                  vertical-align: bottom;
+                }
+div.CBavatarRight > img {
+		  padding: 0px;
+		}
+
+.CBdialog {
+ position:relative;
+ margin:0px auto;
+ min-width:8em;
+ max-width:760px; /* based on image dimensions - not quite consistent with drip styles yet */
+ z-index:1;
+ margin-left:12px; /* default, width of left corner */
+ /* margin-bottom:0.5em; /* spacing under dialog */
+ display: table-cell;
+ text-align:right;
+ color: #000;
+ font-family: Times;
+ font-size: 1.0em;
+}
+
+.CBdialog .CBcontent,
+.CBdialog .CBt,
+.CBdialog .CBb,
+.CBdialog .CBb div {
+ background:transparent url(BubbleBlueR800x1600.png) no-repeat top right;
+ /*_background-image:url(dialog2-blue.gif);  //what is this for?*/
+}
+
+.CBdialog .CBcontent {
+ position:relative;
+ zoom:1;
+ _overflow-y:hidden;
+ padding:0px 12px 0px 0px;
+}
+
+.CBdialog .CBt {
+ /* top+left vertical slice */
+ position:absolute;
+ left:0px;
+ top:0px;
+ width:12px; /* top slice width */
+ margin-left:-12px;
+ height:100%;
+ _height:1600px; /* arbitrary long height, IE 6 */
+ background-position:top left;
+}
+
+.CBdialog .CBb {
+ /* bottom */
+ position:relative;
+ width:100%;
+}
+
+.CBdialog .CBb,
+.CBdialog .CBb div {
+ height:10px; /* height of bottom cap/shade */
+ font-size:1px;
+}
+
+.CBdialog .CBb {
+ background-position:bottom right;
+}
+
+.CBdialog .CBb div {
+ position:relative;
+ width:12px; /* bottom corner width */
+ margin-left:-12px;
+ background-position:bottom left;
+}
+
+.CBdialog .CBhd,
+.CBdialog .CBbd,
+.CBdialog .CBft {
+ position:relative;
+}
+
+.CBdialog .CBwrapper {
+ /* extra content protector - preventing vertical overflow (past background) */
+ position:static;
+ max-height:1000px;
+ overflow:auto; /* note that overflow:auto causes a rather annoying redraw "lag" in Firefox 2, and may degrade performance. Might be worth trying without if you aren't worried about height/overflow issues. */
+}
+
+.CBdialog h1,
+.CBdialog p {
+ margin:0px; /* margins will blow out backgrounds, leaving whitespace. */
+ padding:0.5em 0px 0.5em 0px;
+}
+
+.CBdialog h1 {
+ padding-bottom:0px;
+}

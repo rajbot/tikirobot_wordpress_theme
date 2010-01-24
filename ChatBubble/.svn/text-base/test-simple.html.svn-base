@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>ChatBubble Simple Test</title>
+<link rel="stylesheet" href="ChatBubble-simple.css" media="screen" />
+</head>
+
+<body style="width:500px;">
+
+<div class="CBmsg CBmsgR CBblueR">
+  <div class="CBtxt">
+    <div class="CBcontent">
+      <div class="CBt"></div>
+      I am on the right! This speech balloon is to the left of the icon.
+    </div>
+    <div class="CBb"><div></div></div>
+  </div>
+  <div class="CBiconR"><img src="icons/rajbot.jpg"></div>
+</div>
+
+<br clear=all>
+
+<div class="CBmsg CBmsgL CBpinkL">
+  <div class="CBiconL"><img src="icons/peliom.jpg"></div>
+  <div class="CBtxt">
+    <div class="CBcontent">
+      <div class="CBt"></div>
+      I am on the left! This speech balloon is to the right of the icon.
+    </div>
+    <div class="CBb"><div></div></div>
+  </div>
+</div>
+
+<!--
+<div class="CBmsg">
+<div class="CBdialog" style="width:auto;">
+ <div class="CBcontent">
+  <div class="CBt"></div>
+  <p>I got the "fire alarm" coffee from philz this AM</p>
+ </div> 
+ <div class="CBb"><div></div></div>
+</div>
+<div class="CBavatarRight"><img src="http://www.tikirobot.net/wp/wp-content/themes/gentle_calm/ChatBubble/AvatarPeliom.jpeg"></div>
+</div>
+<br clear="all">
+
+<div class="CBmsg">
+<div class="CBdialog" style="width:100%;">
+ <div class="CBcontent">
+  <div class="CBt"></div>
+  <p>certain coffees I call "page turners" becaues I take a sip and then I have to take another sip, and on and on</p>
+ </div> 
+ <div class="CBb"><div></div></div>
+</div>
+<div class="CBavatarRight"><img src="http://www.tikirobot.net/wp/wp-content/themes/gentle_calm/ChatBubble/AvatarPeliom.jpeg"></div>
+</div>
+
+<br clear="all">
+
+
+<div class="CBmsg">
+  <div>certain coffees I call "page turners" becaues I take a sip and then I have to take another sip, and on and on</div>
+  <div class="CBavatarRight"><img src="http://www.tikirobot.net/wp/wp-content/themes/gentle_calm/ChatBubble/AvatarPeliom.jpeg"></div>
+</div>
+-->
+
+
+</body>
+</html>

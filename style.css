@@ -1,0 +1,523 @@
+/*
+	Theme Name: TikiRobot
+	Theme URI: http://tikirobot.net
+	Description: The theme for tikirobot.net
+	Version: 1.0
+	Author: tikirobot crew
+	Author URI: http://tikirobot.net
+*/
+
+/************************************************
+ *	Main structure															
+ ************************************************/
+body {
+	margin:0px;
+	padding:0px;
+	text-align:center;
+  	font:14px "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+	color: #474E44;
+	background:#F3F4EC;
+	min-width:980px;
+}
+
+	
+#container {
+	width:980px;
+	text-align:left;
+	padding:0 15px;
+	margin:0 auto;
+}
+
+#main {	
+	/*width:560px;*/
+	width:730px;
+	text-align:left;
+	float:left;
+	padding-bottom:0;
+    padding-right:15px;
+	/*border:1px solid blue;*/
+}
+
+/*html>body #main {
+	padding-right:15px;
+	}*/
+
+#sidebar-left {
+	background:#EAECDD;
+	float:left;
+	width:160px;
+max-width:160px;
+	height:2400px;
+	margin-top:0px;
+	margin-right:10px;
+	padding-right:10px;
+	padding-left:10px;
+    padding-top:10px;
+	}
+
+html>body #sidebar-left {
+        padding-top:0px;
+}
+	
+#sidebar-left li {
+	list-style:none;
+	padding-bottom:10px;
+	color:#666;
+	font-size:.9em;
+	}
+	
+#maincol {
+  /*width:72%;*/
+  float:right;
+  width:520px;
+  /*border:1px solid green;*/
+}
+
+#maincol .col {
+	padding-bottom: 0.5em;
+	padding-left:0.5em;
+	line-height:1.25em;
+}
+	
+#navcol {
+	padding:0 15px 10px 15px;
+	margin-top: 0px;
+	width:160px;
+	/*right:0px;*/
+	float:left;
+  	font-size:1em; 
+  	text-align:left;
+	border-left:1px dotted #bab1b1;
+	margin-left:10px;
+}
+
+
+/*
+#container:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+*/
+
+#footer{
+	border-top:1px solid #324031;
+	border-bottom:1px solid #324031;
+	color: #eee;
+	background: #87a284;
+	clear:both;
+	padding: 0.3em;
+	text-align:center;
+	margin-left: auto;
+	display:block;
+	margin-right: auto;
+	font-size: 0.9em;
+	margin-top:5em;
+}
+
+#footer a{
+	color: #fff;
+	font-weight:bold;
+}
+
+a {
+	color: #23537B;
+	text-decoration: none;
+}
+
+.entrybody a {
+	text-decoration:underline;
+	}
+
+.comments_link a {
+        text-decoration:none;
+	}
+	
+.entrybody a img,	
+.comments_link a {
+	border-bottom:0px;
+	}
+	
+a:hover {
+	text-decoration:underline;
+	border-bottom:0px;
+}
+/************************************************
+ *	Header																			*
+ ************************************************/
+#header {
+	padding: 0px;	
+	margin-top: 0.3em;
+	margin-bottom:0px;
+	padding:0 1em 1em -.5em;	
+	/*background: url(images/tikipineapple.png) no-repeat; */ /* Image Location */
+	text-align:left;
+	height: 150px;
+}
+
+html>body #header {
+	margin-bottom:40px;
+}
+	
+#headbar{
+	height:0.2em;
+	margin-bottom:40px;
+}
+#header h1{
+	padding:0px;
+	margin: 0px;
+	margin-bottom:0.3em;
+	font-size: 1.2em;
+	letter-spacing:0.2em;
+}
+#header h1 a {
+	color:#5B7B57;
+}
+#header h1 a:hover {
+	text-decoration:none;
+	color: #bb4444;
+}
+
+#header img {
+	margin-left:-10px;
+	margin-bottom:-5px;
+	padding-bottom:0;
+	border:none;
+	}
+	
+html>body #header img {
+	margin-left:-15px;
+	margin-bottom:-10px;
+	padding-bottom:0;
+	}
+
+#subtitle {
+	border-top: 1px solid #bab1b1;
+	margin-bottom:20px;
+	margin-right:0;
+	margin-top:0;
+	padding-top:0;
+	padding-right:0;
+	font-size: 0.8em;
+	text-transform:uppercase;
+	text-align:right;
+	color:#A37B45;
+	display:block;
+}
+/************************************************
+ *	Content																			*
+ ************************************************/
+h1, h2, h3, h4 {
+	font-family:"Century Gothic", "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+}
+h2 {
+	font-size: 1.2em;
+	margin-bottom:0.5em;
+}
+h2.entrydate{
+	margin-bottom:0.3em;
+	font-size: 1.8em;
+	font-weight:normal;
+	color:#86942A;
+	text-transform:uppercase;
+}
+.entrymeta{
+	font-weight:bold;
+	color:#99A879;
+}
+h2.entrytitle a{
+	color: #507642;
+}
+h2.entrytitle{
+	margin-bottom:0.1em;
+	font-size: 1.6em;
+line-height:1em;
+}
+
+
+html>body h2.entrytitle{
+	margin-top:20px;
+}
+.entryinfo {
+	margin:3px 0 10px 0;
+	color:#666;
+	font-size:.9em;
+	}
+
+.entrybody {
+	width:520px;
+	font-size:1.1em;
+	line-height:1.3em;
+}
+
+
+.entrybody p {
+
+	margin-top:0.8em;
+	margin-bottom:0px;	
+	
+}
+
+.entrybody ul {
+	line-height:1.0em;
+	margin-left:45px;
+        margin-top:15px;
+	}
+	
+.entrybody ul li {
+	line-height:1.2em;
+	list-style:disc;
+        padding-bottom:5px;
+	}
+	
+ul.recommended {
+	margin-left:0;
+	}
+	
+	 
+.entry{
+	padding-bottom: 2em;
+	font-family:"Trebuchet MS","Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+}
+/************************************************
+ *	Navigation Sidebar													*
+ ************************************************/
+ul {
+	margin:0 0 0 0;
+	padding-left:0px;
+	list-style-type:none;
+}
+
+.ads {
+	border-bottom:1px dotted #bab1b1;
+	margin:0 0 10px 0;
+	padding:0 0 5px 0;
+	overflow:hidden;
+	}
+
+/************************************************
+ *	Comments													*
+ ************************************************/
+h2#comments{
+	text-align:center;
+	border-top:1px solid #9ba1aa;
+	background:#E2ECD5;
+	padding:0.7em;
+	border-bottom:1px solid #9ba1aa;
+	margin-bottom:1em;
+	margin-top:8em;
+}
+ol#commentlist {
+	margin-top:0px;
+	padding: 0.5em;
+	margin-left: 0px;
+	color: #9b9b9b;
+	list-style-type: none;
+	font-size:0.9em;
+}
+#commentlist li  p{
+	padding: 0px;
+	margin: 0px;
+}
+.commentname {
+	float: left;
+
+	margin: 0;
+	padding: 0 0 0.2em 0;
+}
+.commentinfo{
+	width: 20em;
+	float: right;
+	text-align: right;
+}
+.commenttext {
+	clear: both;
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-bottom: 3em;
+	border-top: 1px solid #ebebeb;
+	line-height:1.3em;
+	color: #5b5b5b;
+}
+
+#commentblock .commenttext p {
+        margin-bottom:10px;
+		padding-bottom:10px;
+}
+
+#commentsformheader{
+	padding-left:1.5em;
+	font-size: 1.4em;
+}
+#commentsform{
+	margin-top:none;
+	text-align:center;
+	border:1px solid #ddd;
+	background:#ecefdf;
+	padding:0em 1em;
+}
+#commentsform form{
+	text-align:left;
+	margin:0px;
+}
+#commentsform p{
+	margin:0.5em;
+}
+#commentsform form textarea{
+	width:100%;
+}
+p.comments_link {
+	margin-top:15px;
+	padding-top:0px;
+font-size:0.85em;
+}
+
+/************************************************
+ *	Extra																				*
+ ************************************************/
+code{
+	font-family: 'lucida console', 'Courier New', monospace;
+	font-size: 1em;
+	display:block;
+	padding:5px 10px 10px 10px;
+	color:#444;
+	margin:5px 0;
+	background-color: #E5EaE4;
+	border: 1px solid #d2d8d1;
+}
+textarea {
+	padding:0.3em;
+	border: 1px solid #CCCFBC;
+	color: #656F5C;
+	-moz-border-radius: 0.5em;
+}
+
+input[type="text"] {
+	-moz-border-radius: 0;
+	}
+	
+
+input[type="submit"]{
+	background:#60623B;
+	color:#ffffff;
+	font-size:.9em;
+	margin-top:5px;
+}
+
+blockquote {
+	border-left: 3px solid #686868;
+	color: #888;
+	padding-left: 0.8em;
+	margin-left: 2.5em;
+}
+a img {
+	border:0px;
+}
+img{
+        padding:0.5em;
+}
+.imgborder img{
+	border: 1px solid #87a284;
+	background:#CCCFBC;
+	padding:0.3em;
+}
+.imgborder{
+	text-align: center;
+}
+
+
+div.podcast { 
+	float:left; 
+	margin-right:10px;
+}
+
+div.podcast h3 {
+	font-size:1.1em;
+}
+
+div#twitterings {
+	border-bottom:1px dotted #bab1b1;
+	margin-bottom:10px;
+	}
+
+div.twitter {
+	margin:0 0 10px 0;
+	padding:0;
+	font-size:0.9em;
+}
+
+div.twitter img {
+	margin:0 5px 0 0;
+	padding: 0;
+	float:left;
+	width: 24px;
+	height: 24px;
+}
+
+div.twitter h2 {
+	margin-top:0;
+	padding-top:0;
+}
+
+.twitterRight {
+    float:right;
+    width:126px;
+}
+
+.twitterMeta {
+	font-size:.9em;
+	padding:2px 0 0 0;
+	margin:0;
+	color:#888;
+}
+
+div.clear {
+	clear: both;
+	height: 1px;
+	line-height: 0;
+	}
+
+.button {
+	background:#60623B;
+	color:#ffffff;
+	font-size:.9em;
+	margin-top:5px;
+}
+
+fieldset {
+	border:0;
+	margin-left:0;
+	padding-left:0;
+	}
+
+.tr-search {
+	margin-left:0;
+	padding-left:0;
+	}
+
+
+#maincol a img {
+	border:none;
+	border:0px;
+}
+
+a img {
+	border: none;
+}
+
+.post-title {
+	color:#999;
+
+}
+
+#sidebar-left ul.recent-comments li {
+	padding-bottom:18px;
+
+}
+	
+.flickr-yourcomment {margin:0; padding:0;}
+	
+/* CSS Document */
+

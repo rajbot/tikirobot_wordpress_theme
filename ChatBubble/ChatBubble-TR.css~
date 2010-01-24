@@ -1,0 +1,127 @@
+/* Copyright(c)2006 TikiRobot. Software license GPL version 2.
+
+ChatBubble is based on "Even more rounded corners with CSS":
+http://www.schillmania.com/content/projects/even-more-rounded-corners/
+
+ChatBubble-TR.css contains modifications to ChatBubble-simple.css for
+use on TikiRobot.net
+*/
+
+div.CBmsg {
+                  display: table; 
+            margin-bottom: 0.5em;
+}
+
+
+div.CBmsgR {
+                    float: right;
+               text-align: right;
+           }
+           
+div.CBmsgL .CBcontent {
+  padding-left: 12px;
+}
+           
+
+          
+div.CBtxt {
+                  display: table-cell;  
+                 position: relative;
+                   margin: 0px auto;
+                min-width: 8em;
+                max-width: 760px;
+                  z-index: 1;
+              margin-left: 12px;
+              font-family: Times; /* TikiRobot specific */
+                font-size: 1.0em; /* TikiRobot specific */
+                    color: black; /* TikiRobot specific */
+           }
+
+div.CBiconL { 
+                  display: table-cell; 
+           vertical-align: bottom;
+            padding-right: 22px; /* 10+12 */
+            
+            }
+
+div.CBiconR {
+                  display: table-cell; 
+           vertical-align: bottom;
+             padding-left: 10px;
+            }
+
+div.CBiconR > img {
+		  padding: 0px;
+		    width: 32px;
+		   height: 32px;
+		}
+
+div.CBiconL > img {
+		  padding: 0px;
+		    width: 32px;
+		   height: 32px;
+		}
+
+.CBblueR .CBcontent,
+.CBblueR .CBt,
+.CBblueR .CBb,
+.CBblueR .CBb div {
+ background:transparent url(BubbleBlueR800x1600.png) no-repeat top right;
+}
+
+.CBpinkL .CBcontent,
+.CBpinkL .CBt,
+.CBpinkL .CBb,
+.CBpinkL .CBb div {
+ background:transparent url(BubblePinkL800x1600.png) no-repeat top right;
+}
+
+.CBpinkR .CBcontent,
+.CBpinkR .CBt,
+.CBpinkR .CBb,
+.CBpinkR .CBb div {
+ background:transparent url(BubblePinkR800x1600.png) no-repeat top right;
+}
+
+.CBtxt .CBcontent {
+ position:relative;
+ zoom:1;
+ _overflow-y:hidden;
+ padding:5px 12px 0px 0px;
+}
+
+
+.CBtxt .CBt {
+ /* top+left vertical slice */
+ position:absolute;
+ left:0px;
+ top:0px;
+ width:12px; /* top slice width */
+ margin-left:-12px;
+ height:100%;
+ _height:1600px; /* arbitrary long height, IE 6 */
+ background-position:top left;
+}
+
+.CBtxt .CBb {
+ /* bottom */
+ position:relative;
+ width:100%;
+}
+
+.CBtxt .CBb,
+.CBtxt .CBb div {
+ height:10px; /* height of bottom cap/shade */
+ font-size:1px;
+}
+
+.CBtxt .CBb {
+ background-position:bottom right;
+}
+
+.CBtxt .CBb div {
+ position:relative;
+ width:12px; /* bottom corner width */
+ margin-left:-12px;
+ background-position:bottom left;
+}
