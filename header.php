@@ -27,32 +27,6 @@
     <?php wp_get_archives('type=monthly&format=link'); ?>
 	<?php wp_head(); ?>
 
-<script type="text/javascript">
-function twitterCallback(obj) {
-	var id = obj[0].user.id;
-	document.getElementById('my_twitter_status_' + id).innerHTML = obj[0].text;
-	document.getElementById('my_twitter_status_time_' + id).innerHTML = 'sent ' + obj[0].created_at.slice(0,-11);
-
-}
-
-function twitterStatus(url) {
-	var twitScript  = document.createElement("script");
-	twitScript.setAttribute("type", "text/javascript");
-	twitScript.setAttribute("src", url);
-	document.getElementsByTagName('head')[0].appendChild(twitScript);
-}
-
-function initTiki() {
-	twitterStatus('http://twitter.com/statuses/user_timeline/781.json?callback=twitterCallback&count=1');
-//	twitterStatus('http://twitter.com/statuses/user_timeline/5910.json?callback=twitterCallback&count=1');
-	twitterStatus('http://twitter.com/statuses/user_timeline/6760.json?callback=twitterCallback&count=1');
-//	twitterStatus('http://twitter.com/statuses/user_timeline/77883.json?callback=twitterCallback&count=1');	
-	twitterStatus('http://twitter.com/statuses/user_timeline/663433.json?callback=twitterCallback&count=1');
-	twitterStatus('http://twitter.com/statuses/user_timeline/676083.json?callback=twitterCallback&count=1');
-}
-
-</script>
-
 <script>
 function utmx_section(){}
 (function(){var k='0006883377',d=document,l=d.location,c=d.cookie;function f(n){
