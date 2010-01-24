@@ -47,14 +47,6 @@ echo '
 ?>
 
 
-
-<!-- 
-		<h2>Links</h2>
-		<ul>
-			<li><a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>" >Home</a>
-		</ul>
-		-->
-
 <!-- Google CSE Search Box Begins -->
 <h2>Search TikiRobot!</h2>
 <form id="searchbox_000889352474200327076:cfuhwdy3ac4" action="http://www.google.com/cse">
