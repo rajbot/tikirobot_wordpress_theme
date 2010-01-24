@@ -67,6 +67,7 @@ get_header();
 	initTiki();
 	</script>
 
+<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(2) ) : ?>
 	<?php if (function_exists('get_recent_comments')) { ?>
    <h2><?php _e('Commenting'); ?></h2>
         <ul class="recent-comments">
@@ -75,7 +76,8 @@ get_header();
         </ul>
   
    <?php } ?>   
- 
+ <?php endif; ?>
+
 </div>
 
 </div><!-- container ends  -->
