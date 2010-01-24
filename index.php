@@ -18,14 +18,12 @@ get_header();
 			<div class="entrybody">
 				<?php the_content(__('(more...)')); ?>
 			 <p class="comments_link">
-Filed under: <?php the_category(', ') ?> |
+Filed under: <?php the_tags('', ', ', '') ?> |
 <?php edit_post_link('edit', '', ' | '); ?>  
 					<?php 
 						$comments_img_link = '<img src="' . get_stylesheet_directory_uri() . '/images/comments.gif"  title="comments" alt="*" />';
 						comments_popup_link('0 Comments', ' 1 Comment', ' % Comments'); 
 					?>
-<br>
-<small><?php the_tags('Tagged: ', ' , ' , ''); ?></small>
 				</p> 
 			</div>
 </div>
