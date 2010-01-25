@@ -46,14 +46,15 @@ body {
 	background:#EAECDD;
 	float:left;
 	width:160px;
-max-width:160px;
-	height:2400px;
+	max-width:160px;
+	height:auto;
 	margin-top:0px;
 	margin-right:10px;
 	padding-right:10px;
 	padding-left:10px;
-    padding-top:10px;
-	}
+    	padding-top:10px;
+	overflow-x:hidden;
+}
 
 html>body #sidebar-left {
         padding-top:0px;
