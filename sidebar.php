@@ -106,5 +106,6 @@ echo '
 </div>
 <?php endif; ?>
 <!-- end sidebar -->
+</div>
 <div class="clear"></div>
 
