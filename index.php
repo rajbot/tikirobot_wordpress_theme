@@ -18,8 +18,8 @@ get_header();
 			<div class="entrybody">
 				<?php the_content(__('(more...)')); ?>
 			 <p class="comments_link">
-Filed under: <?php the_tags('', ', ', '') ?> |
-<?php edit_post_link('edit', '', ' | '); ?>  
+Filed under: <?php the_tags('', ', ', '') ?> 	<strong>&#183;</strong>
+<?php edit_post_link('edit', '', ' <strong>&#183;</strong> '); ?>  
 					<?php 
 						$comments_img_link = '<img src="' . get_stylesheet_directory_uri() . '/images/comments.gif"  title="comments" alt="*" />';
 						comments_popup_link('0 Comments', ' 1 Comment', ' % Comments'); 
@@ -39,16 +39,16 @@ Filed under: <?php the_tags('', ', ', '') ?> |
 </div><!-- The main content column ends  -->
 
 <div id="sidebar-left">	
-	<div id="twitterings">
-	<h2> Twittering</h2>
+<div id="top"></div>
+     <div id="twitterings">
+         <div class="title">Twittering</div>
+         <script type="text/javascript" src="http://tikirobot.net/twitter/"></script>	
+     </div>
 
-    <script type="text/javascript" src="http://tikirobot.net/twitter/"></script>	
-    
-	</div>
-
+<div id="recentComments">
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(2) ) : ?>
 	<?php if (function_exists('get_recent_comments')) { ?>
-   <h2><?php _e('Commenting'); ?></h2>
+   <h3><?php _e('Commenting'); ?></h3>
         <ul class="recent-comments">
         <?php get_recent_comments(); ?>
 
@@ -56,7 +56,7 @@ Filed under: <?php the_tags('', ', ', '') ?> |
   
    <?php } ?>   
 <?php endif; ?>
-
+</div>
 </div>
 </div><!-- container ends  -->
 <?php get_sidebar(); ?>

@@ -58,11 +58,11 @@ t=h.length>1||!xx||!xx.indexOf(k+':bypasscache');d.write('<sc'+'ript src="'+
 
 <!-- The header begins  -->
 		<div id="header">
-			<a href="/wp"><img src="http://www.tikirobot.net/wp/wp-content/uploads/2007/12/tikipineapple.gif" width="486" height="171"></a>
+			<a href="/wp"><img src="http://dev01.sf.archive.org/tr/wp-content/themes/tikirobot/images/header.jpg" width="960" height="195"></a>
 
 			<div id="subtitle">
-				<!-- Here's the tagline  -->
-				<?php bloginfo('description'); ?> 
+				<!-- Here's the tagline 
+				<?php bloginfo('description'); ?> --> 
 			</div>
 		</div>
 		<!-- <div id="headbar"></div> -->

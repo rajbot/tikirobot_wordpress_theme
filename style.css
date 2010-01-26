@@ -1,10 +1,14 @@
 /*
 	Theme Name: TikiRobot
 	Theme URI: http://tikirobot.net
-	Description: The theme for tikirobot.net, originally based on the Gentle Calm theme by Phu Ly (http://ifelse.co.uk/).
-	Version: 1.0
+	Description: The theme for tikirobot.net.
+	Version: 2.0
 	Author: tikirobot crew
 	Author URI: http://tikirobot.net
+
+	The TikiRobot theme was originally based on the Gentle Calm theme 
+	by Phu Ly (http://ifelse.co.uk/gentle-calm), and is released under
+	a CC Attribution-ShareAlike license.
 */
 
 /************************************************
@@ -14,12 +18,11 @@ body {
 	margin:0px;
 	padding:0px;
 	text-align:center;
-  	font:14px "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
-	color: #474E44;
-	background:#F3F4EC;
+  font:14px Verdana, Helvetica, Arial, sans-serif;
+	color: #736355;
+	background:#F4F4EE;
 	min-width:980px;
 }
-
 	
 #container {
 	width:980px;
@@ -29,37 +32,53 @@ body {
 }
 
 #main {	
-	/*width:560px;*/
 	width:730px;
 	text-align:left;
 	float:left;
-	padding-bottom:0;
-    padding-right:15px;
-	/*border:1px solid blue;*/
+	padding-bottom:50px;
+  padding-right:15px;
 }
-
-/*html>body #main {
-	padding-right:15px;
-	}*/
 
 #sidebar-left {
-	background:#EAECDD;
 	float:left;
-	width:160px;
-	max-width:160px;
-	height:auto;
-	margin-top:0px;
+	max-width:190px;
+	width:190px;
 	margin-right:10px;
-	padding-right:10px;
-	padding-left:10px;
-    	padding-top:10px;
 	overflow-x:hidden;
-}
+}	
 
 html>body #sidebar-left {
-        padding-top:0px;
+   padding-top:0px;
 }
-	
+
+#sidebar-left #top {
+	background:url(http://dev01.sf.archive.org/tr/wp-content/themes/tikirobot/images/bg_sidebar_topleft.gif) no-repeat;
+	width:190px;
+	height:22px;
+	margin-top:10px;
+}
+
+#sidebar-right {
+	padding:0 15px 30px 15px;
+	margin-top: 222px;
+	float:left;
+  font-size:.9em; 
+  text-align:left;
+	height:auto;
+} 
+
+#sidebar-right #top {
+	background:url(http://dev01.sf.archive.org/tr/wp-content/themes/tikirobot/images/bg_sidebar_topright.gif) no-repeat;
+	width:190px;
+	height:14px;
+}
+
+#sidebar-right #bg {
+	background:#E6E6DC;
+	padding: 0 15px 30px 15px;
+	width:160px;
+	}
+
 #sidebar-left li {
 	list-style:none;
 	padding-bottom:10px;
@@ -68,46 +87,17 @@ html>body #sidebar-left {
 	}
 	
 #maincol {
-  /*width:72%;*/
   float:right;
-  width:520px;
-  /*border:1px solid green;*/
+  width:515px;
+	padding-top:20px;
 }
 
 #maincol .col {
-	padding-bottom: 0.5em;
-	padding-left:0.5em;
 	line-height:1.25em;
 }
-	
-#navcol {
-	padding:0 15px 10px 15px;
-	margin-top: 0px;
-	width:160px;
-	/*right:0px;*/
-	float:left;
-  	font-size:1em; 
-  	text-align:left;
-	border-left:1px dotted #bab1b1;
-	margin-left:10px;
-}
-
-
-/*
-#container:after {
-    content: "."; 
-    display: block; 
-    height: 0; 
-    clear: both; 
-    visibility: hidden;
-}
-*/
 
 #footer{
-	border-top:1px solid #324031;
-	border-bottom:1px solid #324031;
 	color: #eee;
-	background: #87a284;
 	clear:both;
 	padding: 0.3em;
 	text-align:center;
@@ -123,9 +113,19 @@ html>body #sidebar-left {
 	font-weight:bold;
 }
 
+
+/************************************************
+ *	Links																			*
+ ************************************************/
+
 a {
-	color: #23537B;
+	color: #0099CC;
 	text-decoration: none;
+}
+
+a:hover {
+	text-decoration:underline;
+	border-bottom:0px;
 }
 
 .entrybody a {
@@ -133,7 +133,7 @@ a {
 	}
 
 .comments_link a {
-        text-decoration:none;
+ text-decoration:none;
 	}
 	
 .entrybody a img,	
@@ -141,10 +141,8 @@ a {
 	border-bottom:0px;
 	}
 	
-a:hover {
-	text-decoration:underline;
-	border-bottom:0px;
-}
+
+
 /************************************************
  *	Header																			*
  ************************************************/
@@ -153,7 +151,6 @@ a:hover {
 	margin-top: 0.3em;
 	margin-bottom:0px;
 	padding:0 1em 1em -.5em;	
-	/*background: url(images/tikipineapple.png) no-repeat; */ /* Image Location */
 	text-align:left;
 	height: 150px;
 }
@@ -211,12 +208,14 @@ html>body #header img {
  *	Content																			*
  ************************************************/
 h1, h2, h3, h4 {
-	font-family:"Century Gothic", "Lucida Grande", "Lucida Sans Unicode", Verdana, Helvetica, Arial, sans-serif;
+	font-family:Georgia, "Times New Roman", Times, serif;
 }
+
 h2 {
-	font-size: 1.2em;
+	font-size: 1.4em;
 	margin-bottom:0.5em;
 }
+
 h2.entrydate{
 	margin-bottom:0.3em;
 	font-size: 1.8em;
@@ -229,18 +228,29 @@ h2.entrydate{
 	color:#99A879;
 }
 h2.entrytitle a{
-	color: #507642;
-}
-h2.entrytitle{
-	margin-bottom:0.1em;
-	font-size: 1.6em;
-line-height:1em;
+	color: #5F5F39;
 }
 
+h2.entrytitle{
+	margin-bottom:0.1em;
+	line-height:1em;
+}
 
 html>body h2.entrytitle{
 	margin-top:20px;
 }
+
+#sidebar-right h3, 
+#sidebar-left h3 {
+	font-size: 1.2em;
+	padding-left: 8px;
+	color:#5F6039;
+	background:url(http://dev01.sf.archive.org/tr/wp-content/themes/tikirobot/images/bg_sidebar_title.gif) no-repeat;
+	height:28px;
+	width:164px;
+	}
+	
+
 .entryinfo {
 	margin:3px 0 10px 0;
 	color:#666;
@@ -388,6 +398,11 @@ code{
 	background-color: #E5EaE4;
 	border: 1px solid #d2d8d1;
 }
+
+div.wp_syntax {
+	margin-top:15px;
+	}
+	
 textarea {
 	padding:0.3em;
 	border: 1px solid #CCCFBC;
@@ -439,13 +454,27 @@ div.podcast h3 {
 }
 
 div#twitterings {
-	border-bottom:1px dotted #bab1b1;
+	background:#E6E6DC;
 	margin-bottom:10px;
 	}
+	
+
+div#twitterings .title {
+	background: #E6E6DC url(http://dev01.sf.archive.org/tr/wp-content/themes/tikirobot/images/bg_twittering.gif) 15px 10px no-repeat;
+	height:48px;
+	width: 190px;
+	padding-left: 55px;
+	padding-top:16px;
+	font-size: 1.2em;
+	color:#5F6039;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-weight:bold;
+}
+
 
 div.twitter {
 	margin:0 0 10px 0;
-	padding:0;
+	padding:0 15px 10px 15px;
 	font-size:0.9em;
 }
 
@@ -457,14 +486,10 @@ div.twitter img {
 	height: 24px;
 }
 
-div.twitter h2 {
-	margin-top:0;
-	padding-top:0;
-}
 
 .twitterRight {
-    float:right;
-    width:126px;
+	float:right;
+	width:126px;
 }
 
 .twitterMeta {
@@ -472,6 +497,11 @@ div.twitter h2 {
 	padding:2px 0 0 0;
 	margin:0;
 	color:#888;
+}
+
+#recentComments {
+	background:#E6E6DC;
+	padding: 1px 15px 15px 15px;
 }
 
 div.clear {
