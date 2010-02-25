@@ -58,7 +58,7 @@ t=h.length>1||!xx||!xx.indexOf(k+':bypasscache');d.write('<sc'+'ript src="'+
 
 <!-- The header begins  -->
 		<div id="header">
-			<a href="/wp"><img src="http://dev01.sf.archive.org/tr/wp-content/themes/tikirobot/images/header.jpg" width="960" height="195"></a>
+			<a href="/wp"><img src="<?php echo get_bloginfo('stylesheet_directory').'/images/header.jpg'; ?>" width="960" height="195"></a>
 
 			<div id="subtitle">
 				<!-- Here's the tagline 
