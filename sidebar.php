@@ -3,7 +3,8 @@
 <div id="top" ></div>
 <div id="bg">
 <?php
-if ('/wp/' != $_SERVER[REQUEST_URI]) {
+//if ('/wp/' != $_SERVER[REQUEST_URI]) {
+if (FALSE) {
 echo '
 <!-- //Amazon Omikase ads -->
 <div class="ads">
